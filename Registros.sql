@@ -33,4 +33,6 @@ insert into Pagos values (728,'202003098444588172','Insccripcion', 2800);
 insert into Pagos values (729,'202003098444187636','Titulacion', 1200);
 insert into Pagos values (730,'202003098418723621','Insccripcion', 2800);
 
+Alumno; Mario Alexis Gonzalez Hilario
+
 ######################################################################################
