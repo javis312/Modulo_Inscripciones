@@ -15,11 +15,31 @@ CREATE TABLE alumnos(
 	horas_practicas int, 
 	horas_teoricas int, 
 	CONSTRAINT materias_pk PRIMARY KEY (clave_materia), 
-	CONSTRAINT materias_fk1 FOREIGN KEY(id_docente) REFERENCES docente(id_docente) ON DELETE CASCADE 
-	CONSTRAINT materias_fk2 FOREIGN KEY (id_semestre) REFERENCES semestre (id_semestre)  ON DELETE CASCADE 
-); 
+	CONSTRAINT materias_fk1 FOREIGN KEY(id_docente) REFERENCES docente(id_docente),
+	CONSTRAINT materias_fk2 FOREIGN KEY (id_semestre) REFERENCES semestre (id_semestre)  ON DELETE CASCADE
+);
 
-################### MODULO INSCRIPCIONES ###################
+CREATE TABLE Semestre(
+	id_semestre int NOT NULL,
+	Nombre varchar(30) NOT NULL,
+	Periodo varchar(30) NOT NULL,
+	clave_carrera varchar (10) NOT NULL,
+	CONSTRAINT fk_carrera_semestre FOREIGN KEY clave_carrera REFERENCES carreras (clave_carrera),
+	CONSTRAINT pk_semestre PRIMARY KEY (id_semestre)
+	ON DELETE CASCADE
+);
+
+CREATE TABLE GRUPO (
+ID_GRUPO INT NOT NULL,
+EDIFICIO VARCHAR2(5),
+NUM_GRUPO VARCHAR2(10),
+ID_SEMESTRE INT NOT NULL,
+CONSTRAINT PK_GRUPO PRIMARY KEY (ID_GRUPO),
+CONSTRAINT FK_SEMESTRE FOREIGN KEY (ID_SEMESTRE) REFERENCES SEMESTRE(ID_SEMESTRE)
+);
+
+
+ ################### MODULO INSCRIPCIONES ###################
 # Tabla Pagos
 CREATE TABLE Pagos(
 	id_pago int NOT NULL,
@@ -34,10 +54,13 @@ CREATE TABLE Pagos(
 # Tabla CargaAcademica
 CREATE TABLE CargaAcademica(
 	id_cargaAcad int NOT NULL,
-	num_control	varchar(13),
+	num_control	int NOT NULL,
+	id_grupo int NOT NULL,
+	id_semestre int NOT NULL,
 	CONSTRAINT pk_carga PRIMARY KEY (id_cargaAcad),
 	CONSTRAINT fk_control_carga FOREIGN KEY (num_control) REFERENCES alumnos (num_control),
-	PRIMARY KEY (id_cargaAcad, num_control)
+	CONSTRAINT fk_grupo_carga FOREIGN KEY (id_grupo) REFERENCES grupo (id_grupo),
+	CONSTRAINT fk_semestre_carga FOREIGN KEY (id_semestre) REFERENCES Semestre(id_semestre)
 	ON DELETE CASCADE
 );
 
@@ -55,10 +78,8 @@ CREATE TABLE Materias_Carga(
 CREATE TABLE Inscripciones(
 	id_inscripcion int,
 	id_cargaAcad int,
-	num_control varchar(13),
 	PRIMARY KEY (id_inscripcion),
 	CONSTRAINT fk_carga_inscr FOREIGN KEY (id_cargaAcad) REFERENCES CargaAcademica (id_cargaAcad),
-	CONSTRAINT fk_control_inscr FOREIGN KEY (num_control) REFERENCES alumnos (num_control),
 	ON DELETE CASCADE
 );
 
@@ -71,3 +92,6 @@ CREATE TABLE Inscripcione_Pago(
 	ON DELETE CASCADE
 
 );
+
+#######################################################################
+ 
