@@ -59,8 +59,6 @@ CREATE TABLE CargaAcademica(
 	id_semestre int NOT NULL,
 	CONSTRAINT pk_carga PRIMARY KEY (id_cargaAcad),
 	CONSTRAINT fk_control_carga FOREIGN KEY (num_control) REFERENCES alumnos (num_control),
-	CONSTRAINT fk_grupo_carga FOREIGN KEY (id_grupo) REFERENCES grupo (id_grupo),
-	CONSTRAINT fk_semestre_carga FOREIGN KEY (id_semestre) REFERENCES Semestre(id_semestre)
 	ON DELETE CASCADE
 );
 
