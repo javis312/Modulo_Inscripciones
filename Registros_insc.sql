@@ -36,11 +36,9 @@ INSERT INTO alumnos VALUES ('2018150480988',30);
 INSERT INTO materias VALUES('SCC-1010','Graficacion',5,4,2,2,'x','x');
 INSERT INTO materias VALUES('AEC-1061','Sistemas Operativos',6,4,2,2,'x','x');
 INSERT INTO materias VALUES('SCC-1007','Fundametos de Ingenria en Software',5,4,2,2,'x','x');
-
 INSERT INTO materias VALUES('SCD-1003','Arquitectura de Computadoras',4,5,2,3,'x','x');
 INSERT INTO materias VALUES('SCA-1025','TALLER DE BASE DE DATOS',5,4,4,0,'x','x');
 INSERT INTO materias VALUES('AEC-1034','Fundamentos De Telecomunicaciones',5,4,2,2,'x','x');
-
 INSERT INTO materias VALUES('ACC-0906','Fundametos de investigacion',4,4,2,2,'x','x');
 INSERT INTO materias VALUES('ARC-1017','Geometria descriptiva II',4,4,2,2,'x','x');
 INSERT INTO materias VALUES('ARC-1013','Estructuras 1',4,4,2,2,'x','x');
@@ -222,3 +220,25 @@ INSERT INTO Inscripciones_Pago VALUES (1007, 11007);
 INSERT INTO Inscripciones_Pago VALUES (1008, 11008);
 INSERT INTO Inscripciones_Pago VALUES (1009, 11009);
 INSERT INTO Inscripciones_Pago VALUES (1010, 11010);
+
+
+# Carga #1 Con 6 Materias
+INSERT INTO Materias_Carga VALUES (100001, 'SCC-1010');
+INSERT INTO Materias_Carga VALUES (100001, 'AEC-1061');
+INSERT INTO Materias_Carga VALUES (100001, 'SCC-1007');
+INSERT INTO Materias_Carga VALUES (100001, 'SCD-1003');
+INSERT INTO Materias_Carga VALUES (100001, 'SCA-1025');
+INSERT INTO Materias_Carga VALUES (100001, 'AEC-1034');
+);
+
+
+# Pendientes por llenar, Son 30 cargas con 6(+) materias
+INSERT INTO Materias_Carga VALUES (100002, 
+INSERT INTO Materias_Carga VALUES (100003, 
+INSERT INTO Materias_Carga VALUES (100004, 
+INSERT INTO Materias_Carga VALUES (100005, 
+INSERT INTO Materias_Carga VALUES (100006, 
+INSERT INTO Materias_Carga VALUES (100007, 
+INSERT INTO Materias_Carga VALUES (100008, 
+INSERT INTO Materias_Carga VALUES (100009, 
+INSERT INTO Materias_Carga VALUES (100010, 

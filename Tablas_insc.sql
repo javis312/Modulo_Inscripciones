@@ -8,7 +8,7 @@ CREATE TABLE alumnos(
 
  #Tabla materias
  CREATE TABLE materias( 
-	clave_materia int NOT NULL, 
+	clave_materia varchar(10) NOT NULL, 
 	nombre varchar(30), 
 	unidades int, 
 	creditos int, 
