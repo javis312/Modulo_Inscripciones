@@ -83,7 +83,7 @@ CREATE TABLE Inscripciones(
 	ON DELETE CASCADE
 );
 
-CREATE TABLE Inscripcione_Pago(
+CREATE TABLE Inscripciones_Pago(
 	id_inscripcion int NOT NULL,
 	id_pago int NOT NULL,
 	CONSTRAINT fk_insc_pago FOREIGN KEY (id_inscripcion) REFERENCES Inscripciones (id_inscripcion),
@@ -95,3 +95,43 @@ CREATE TABLE Inscripcione_Pago(
 
 #######################################################################
  
+########## EJEMPLOS ############
+#   							ID CARGA 	num_control   grupo Semestre
+INSERT INTO CargaAcademica VALUES (100001, '201815048005', 101, 1001);
+INSERT INTO CargaAcademica VALUES (100002, '201815048005', 101, 1001);
+INSERT INTO CargaAcademica VALUES (100003, '201815048005', 101, 1001);
+INSERT INTO CargaAcademica VALUES (100004, '201815048005', 101, 1001);
+INSERT INTO CargaAcademica VALUES (100005, '201815048005', 101, 1001);
+INSERT INTO CargaAcademica VALUES (100006, '201815048005', 101, 1001);
+INSERT INTO CargaAcademica VALUES (100007, '201815048005', 101, 1001);
+INSERT INTO CargaAcademica VALUES (100008, '201815048005', 101, 1001);
+INSERT INTO CargaAcademica VALUES (100009, '201815048006', 101, 1001);
+INSERT INTO CargaAcademica VALUES (100010, '201815048006', 101, 1001);
+
+#							   id_inscr  ID_CARGA
+INSERT INTO Inscripciones VALUES (1001, 100001);
+INSERT INTO Inscripciones VALUES (1002, 100002);
+INSERT INTO Inscripciones VALUES (1003, 100003);
+INSERT INTO Inscripciones VALUES (1004, 100004);
+INSERT INTO Inscripciones VALUES (1005, 100005);
+INSERT INTO Inscripciones VALUES (1006, 100006);
+INSERT INTO Inscripciones VALUES (1007, 100007);
+INSERT INTO Inscripciones VALUES (1008, 100008);
+INSERT INTO Inscripciones VALUES (1009, 100009);
+INSERT INTO Inscripciones VALUES (1010, 100010);
+
+#									 ID_Insc  ID_PAGO
+# Pago por Inscripcion y Recursamiento (vease registro de pagos)
+INSERT INTO Inscripciones_Pago VALUES (1001, 11001);
+INSERT INTO Inscripciones_Pago VALUES (1001, 20001);
+
+#Pagos por Inscripcion
+INSERT INTO Inscripciones_Pago VALUES (1002, 11002);
+INSERT INTO Inscripciones_Pago VALUES (1003, 11003);
+INSERT INTO Inscripciones_Pago VALUES (1004, 11004);
+INSERT INTO Inscripciones_Pago VALUES (1005, 11005);
+INSERT INTO Inscripciones_Pago VALUES (1006, 11006);
+INSERT INTO Inscripciones_Pago VALUES (1007, 11007);
+INSERT INTO Inscripciones_Pago VALUES (1008, 11008);
+INSERT INTO Inscripciones_Pago VALUES (1009, 11009);
+INSERT INTO Inscripciones_Pago VALUES (1010, 11010);
