@@ -222,7 +222,7 @@ INSERT INTO Inscripciones_Pago VALUES (1009, 11009);
 INSERT INTO Inscripciones_Pago VALUES (1010, 11010);
 
 
-# Carga #1 Con 6 Materias
+# Carga #1 Con 6 materias 		 ID_CARGA	ID_MATERIA
 INSERT INTO Materias_Carga VALUES (100001, 'SCC-1010');
 INSERT INTO Materias_Carga VALUES (100001, 'AEC-1061');
 INSERT INTO Materias_Carga VALUES (100001, 'SCC-1007');
