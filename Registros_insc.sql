@@ -242,3 +242,37 @@ INSERT INTO Materias_Carga VALUES (100007,
 INSERT INTO Materias_Carga VALUES (100008, 
 INSERT INTO Materias_Carga VALUES (100009, 
 INSERT INTO Materias_Carga VALUES (100010, 
+                                   
+                                   
+#############                            CARGAACADEMICA,######FABIOLA ORTIZ LONGINOS########3
+                                   insert into CargaAcademica values(10000,2018150480052,101,1001);
+insert into CargaAcademica values(10001,2018150480053,102,1002);
+insert into CargaAcademica values(10002,2018150480054,103,1003);
+insert into CargaAcademica values(10003,2018150480055,104,1004);
+insert into CargaAcademica values(10004,2018150480056,105,1005);
+insert into CargaAcademica values(10005,2018150480057,106,1006);
+insert into CargaAcademica values(10006,2018150480058,107,1007);
+insert into CargaAcademica values(10007,2018150480059,108,1007);
+insert into CargaAcademica values(10008,2018150480060,109,1008);
+insert into CargaAcademica values(10009,2018150480061,110,1009);
+insert into CargaAcademica values(10010,2018150480195,111,2001);
+insert into CargaAcademica values(10011,2018150480034,112,2002);
+insert into CargaAcademica values(10012,2018150480572,113,2003);
+insert into CargaAcademica values(10013,2018150480246,114,2004);
+insert into CargaAcademica values(10014,2018150480125,115,2005);
+insert into CargaAcademica values(10015,2018150480873,116,2006);
+insert into CargaAcademica values(10016,2018150480164,117,2007);
+insert into CargaAcademica values(10017,2018150480073,118,2008);
+insert into CargaAcademica values(10018,2018150480724,119,2009);
+insert into CargaAcademica values(10019,2018150480936,120,3001);
+insert into CargaAcademica values(10020,2018150480900,121,3002);
+insert into CargaAcademica values(10021,2018150480915,122,3003);
+insert into CargaAcademica values(10022,2018150480945,123,3004);
+insert into CargaAcademica values(10023,2018150480975,124,3005);
+insert into CargaAcademica values(10024,2018150480969,125,3006);
+insert into CargaAcademica values(10025,2018150480947,126,3007);
+insert into CargaAcademica values(10026,2018150480930,127,3008);
+insert into CargaAcademica values(10027,2018150480974,128,3009);
+insert into CargaAcademica values(10028,2018150480985,129,3010);
+insert into CargaAcademica values(10029,2018150480988,130,3011);
+################################################
