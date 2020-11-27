@@ -73,37 +73,35 @@ INSERT INTO materias VALUES('1030',"Fundamentos de investigacion",4,4,2,2,'x','x
 
 
 ######################## REGISTROS SEMESTRE ###########################
-INSERT INTO Semestre VALUES (1001, 'Primero', '2020-2021', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (1002, 'Segundo', '2020-2021', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (1003, 'Tercero', '2020-2021', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (1004, 'Cuarto', 	'2020-2021', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (1005, 'Quinto', 	'2020-2021', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (1006, 'Sexto', 	'2020-2021', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (1007, 'Septimo', '2020-2021', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (1008, 'Octavo', 	'2020-2021', CARRERA_PENDIENTE)
-INSERT INTO Semestre VALUES (1009, 'Noveno', 	'2020-2021', CARRERA_PENDIENTE);
+INSERT INTO Semestre VALUES (1001, 'Primero', '2020-2021', 'ISC005');
+INSERT INTO Semestre VALUES (1002, 'Segundo', '2020-2021', 'ISC005');
+INSERT INTO Semestre VALUES (1003, 'Tercero', '2020-2021', 'ISC005');
+INSERT INTO Semestre VALUES (1004, 'Cuarto',  '2020-2021', 'ISC005');
+INSERT INTO Semestre VALUES (1005, 'Quinto',  '2020-2021', 'ISC005');
+INSERT INTO Semestre VALUES (1006, 'Sexto',   '2020-2021', 'ISC005');
+INSERT INTO Semestre VALUES (1007, 'Septimo', '2020-2021', 'ISC005');
+INSERT INTO Semestre VALUES (1008, 'Octavo',  '2020-2021', 'ISC005');
+INSERT INTO Semestre VALUES (1009, 'Noveno',  '2020-2021', 'ISC005');
 
-INSERT INTO Semestre VALUES (2001, 'Primero', '2021-2022', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (2002, 'Segundo', '2021-2022', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (2003, 'Tercero', '2021-2022', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (2004, 'Cuarto', 	'2021-2022', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (2005, 'Quinto', 	'2021-2022', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (2006, 'Sexto', 	'2021-2022', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (2007, 'Septimo', '2021-2022', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (2008, 'Octavo', 	'2021-2022', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (2009, 'Noveno', 	'2021-2022', CARRERA_PENDIENTE);
+INSERT INTO Semestre VALUES (1001, 'Primero', '2020-2021', 'IME007');
+INSERT INTO Semestre VALUES (1002, 'Segundo', '2020-2021', 'IME007');
+INSERT INTO Semestre VALUES (1003, 'Tercero', '2020-2021', 'IME007');
+INSERT INTO Semestre VALUES (1004, 'Cuarto',  '2020-2021', 'IME007');
+INSERT INTO Semestre VALUES (1005, 'Quinto',  '2020-2021', 'IME007');
+INSERT INTO Semestre VALUES (1006, 'Sexto',   '2020-2021', 'IME007');
+INSERT INTO Semestre VALUES (1007, 'Septimo', '2020-2021', 'IME007');
+INSERT INTO Semestre VALUES (1008, 'Octavo',  '2020-2021', 'IME007');
+INSERT INTO Semestre VALUES (1009, 'Noveno',  '2020-2021', 'IME007');
 
-INSERT INTO Semestre VALUES (3001, 'Primero', '2022-2023', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (3002, 'Segundo', '2022-2023', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (3003, 'Tercero', '2022-2023', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (3004, 'Cuarto', 	'2022-2023', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (3005, 'Quinto', 	'2022-2023', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (3006, 'Sexto', 	'2022-2023', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (3007, 'Septimo', '2022-2023', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (3008, 'Octavo', 	'2022-2023', CARRERA_PENDIENTE);
-INSERT INTO Semestre VALUES (3009, 'Noveno', 	'2022-2023', CARRERA_PENDIENTE);
-
-
+INSERT INTO Semestre VALUES (1001, 'Primero', '2020-2021', 'IAD010');
+INSERT INTO Semestre VALUES (1002, 'Segundo', '2020-2021', 'IAD010');
+INSERT INTO Semestre VALUES (1003, 'Tercero', '2020-2021', 'IAD010');
+INSERT INTO Semestre VALUES (1004, 'Cuarto',  '2020-2021', 'IAD010');
+INSERT INTO Semestre VALUES (1005, 'Quinto',  '2020-2021', 'IAD010');
+INSERT INTO Semestre VALUES (1006, 'Sexto',   '2020-2021', 'IAD010');
+INSERT INTO Semestre VALUES (1007, 'Septimo', '2020-2021', 'IAD010');
+INSERT INTO Semestre VALUES (1008, 'Octavo',  '2020-2021', 'IAD010');
+INSERT INTO Semestre VALUES (1009, 'Noveno',  '2020-2021', 'IAD010');
 
  #insersion de datos en tabla grupo EN ORACLE       
 INSERT INTO GRUPO VALUES (101,'A','LZ-301',PENDIENTE);
@@ -181,29 +179,72 @@ INSERT INTO PAGOS VALUES (20001, '970000219016255724543393231', 'Recursamiento p
 #######################################################################
  
 ########## EJEMPLOS ############
+#############                            CARGAACADEMICA,######FABIOLA ORTIZ LONGINOS########
 #   							ID CARGA 	num_control   grupo Semestre
-INSERT INTO CargaAcademica VALUES (100001, '201815048005', 101, 1001);
-INSERT INTO CargaAcademica VALUES (100002, '201815048005', 101, 1001);
-INSERT INTO CargaAcademica VALUES (100003, '201815048005', 101, 1001);
-INSERT INTO CargaAcademica VALUES (100004, '201815048005', 101, 1001);
-INSERT INTO CargaAcademica VALUES (100005, '201815048005', 101, 1001);
-INSERT INTO CargaAcademica VALUES (100006, '201815048005', 101, 1001);
-INSERT INTO CargaAcademica VALUES (100007, '201815048005', 101, 1001);
-INSERT INTO CargaAcademica VALUES (100008, '201815048005', 101, 1001);
-INSERT INTO CargaAcademica VALUES (100009, '201815048006', 101, 1001);
-INSERT INTO CargaAcademica VALUES (100010, '201815048006', 101, 1001);
+insert into CargaAcademica values(10000,'2018150480052', 101, 1005);
+insert into CargaAcademica values(10001,'2018150480053', 101, 1005);
+insert into CargaAcademica values(10002,'2018150480054', 101, 1005);
+insert into CargaAcademica values(10003,'2018150480055', 101, 1005);
+insert into CargaAcademica values(10004,'2018150480056', 101, 1005);
+insert into CargaAcademica values(10005,'2018150480057', 101, 1005);
+insert into CargaAcademica values(10006,'2018150480058', 101, 1005);
+insert into CargaAcademica values(10007,'2018150480059', 101, 1005);
+insert into CargaAcademica values(10008,'2018150480060', 101, 1005);
+insert into CargaAcademica values(10009,'2018150480061', 101, 1005);
+insert into CargaAcademica values(10010,'2018150480195', 101, 1005);
+insert into CargaAcademica values(10011,'2018150480034', 101, 1005);
+insert into CargaAcademica values(10012,'2018150480572', 101, 1005);
+insert into CargaAcademica values(10013,'2018150480246', 101, 1005);
+insert into CargaAcademica values(10014,'2018150480125', 101, 1005);
+insert into CargaAcademica values(10015,'2018150480873', 101, 1005);
+insert into CargaAcademica values(10016,'2018150480164', 101, 1005);
+insert into CargaAcademica values(10017,'2018150480073', 101, 1005);
+insert into CargaAcademica values(10018,'2018150480724', 101, 1005);
+insert into CargaAcademica values(10019,'2018150480936', 101, 1005);
+insert into CargaAcademica values(10020,'2018150480900', 101, 1005);
+insert into CargaAcademica values(10021,'2018150480915', 101, 1005);
+insert into CargaAcademica values(10022,'2018150480945', 101, 1005);
+insert into CargaAcademica values(10023,'2018150480975', 101, 1005);
+insert into CargaAcademica values(10024,'2018150480969', 101, 1005);
+insert into CargaAcademica values(10025,'2018150480947', 101, 1005);
+insert into CargaAcademica values(10026,'2018150480930', 101, 1005);
+insert into CargaAcademica values(10027,'2018150480974', 101, 1005);
+insert into CargaAcademica values(10028,'2018150480985', 101, 1005);
+insert into CargaAcademica values(10029,'2018150480988', 101, 1005);
 
 #							   id_inscr  ID_CARGA
-INSERT INTO Inscripciones VALUES (1001, 100001);
-INSERT INTO Inscripciones VALUES (1002, 100002);
-INSERT INTO Inscripciones VALUES (1003, 100003);
-INSERT INTO Inscripciones VALUES (1004, 100004);
-INSERT INTO Inscripciones VALUES (1005, 100005);
-INSERT INTO Inscripciones VALUES (1006, 100006);
-INSERT INTO Inscripciones VALUES (1007, 100007);
-INSERT INTO Inscripciones VALUES (1008, 100008);
-INSERT INTO Inscripciones VALUES (1009, 100009);
-INSERT INTO Inscripciones VALUES (1010, 100010);
+INSERT INTO Inscripciones VALUES (1001, 100000);
+INSERT INTO Inscripciones VALUES (1002, 100001);
+INSERT INTO Inscripciones VALUES (1003, 100002);
+INSERT INTO Inscripciones VALUES (1004, 100003);
+INSERT INTO Inscripciones VALUES (1005, 100004);
+INSERT INTO Inscripciones VALUES (1006, 100005);
+INSERT INTO Inscripciones VALUES (1007, 100006);
+INSERT INTO Inscripciones VALUES (1008, 100007);
+INSERT INTO Inscripciones VALUES (1009, 100008);
+INSERT INTO Inscripciones VALUES (1010, 100009);
+
+INSERT INTO Inscripciones VALUES (1011, 100010);
+INSERT INTO Inscripciones VALUES (1012, 100011);
+INSERT INTO Inscripciones VALUES (1013, 100012);
+INSERT INTO Inscripciones VALUES (1014, 100013);
+INSERT INTO Inscripciones VALUES (1015, 100014);
+INSERT INTO Inscripciones VALUES (1016, 100015);
+INSERT INTO Inscripciones VALUES (1017, 100016);
+INSERT INTO Inscripciones VALUES (1018, 100017);
+INSERT INTO Inscripciones VALUES (1019, 100018);
+INSERT INTO Inscripciones VALUES (1020, 100019);
+
+INSERT INTO Inscripciones VALUES (1021, 100020);
+INSERT INTO Inscripciones VALUES (1022, 100021);
+INSERT INTO Inscripciones VALUES (1023, 100022);
+INSERT INTO Inscripciones VALUES (1024, 100023);
+INSERT INTO Inscripciones VALUES (1025, 100024);
+INSERT INTO Inscripciones VALUES (1026, 100025);
+INSERT INTO Inscripciones VALUES (1027, 100026);
+INSERT INTO Inscripciones VALUES (1028, 100027);
+INSERT INTO Inscripciones VALUES (1029, 100028);
+INSERT INTO Inscripciones VALUES (1030, 100029);
 
 #									 ID_Insc  ID_PAGO
 # Pago por Inscripcion y Recursamiento (vease registro de pagos)
@@ -221,7 +262,6 @@ INSERT INTO Inscripciones_Pago VALUES (1008, 11008);
 INSERT INTO Inscripciones_Pago VALUES (1009, 11009);
 INSERT INTO Inscripciones_Pago VALUES (1010, 11010);
 
-
 # Carga #1 Con 6 materias 		 ID_CARGA	ID_MATERIA
 INSERT INTO Materias_Carga VALUES (100001, 'SCC-1010');
 INSERT INTO Materias_Carga VALUES (100001, 'AEC-1061');
@@ -230,7 +270,6 @@ INSERT INTO Materias_Carga VALUES (100001, 'SCD-1003');
 INSERT INTO Materias_Carga VALUES (100001, 'SCA-1025');
 INSERT INTO Materias_Carga VALUES (100001, 'AEC-1034');
 );
-
 
 # Pendientes por llenar, Son 30 cargas con 6(+) materias
 INSERT INTO Materias_Carga VALUES (100002, 
@@ -243,36 +282,4 @@ INSERT INTO Materias_Carga VALUES (100008,
 INSERT INTO Materias_Carga VALUES (100009, 
 INSERT INTO Materias_Carga VALUES (100010, 
                                    
-                                   
-#############                            CARGAACADEMICA,######FABIOLA ORTIZ LONGINOS########3
-                                   insert into CargaAcademica values(10000,2018150480052,101,1001);
-insert into CargaAcademica values(10001,2018150480053,102,1002);
-insert into CargaAcademica values(10002,2018150480054,103,1003);
-insert into CargaAcademica values(10003,2018150480055,104,1004);
-insert into CargaAcademica values(10004,2018150480056,105,1005);
-insert into CargaAcademica values(10005,2018150480057,106,1006);
-insert into CargaAcademica values(10006,2018150480058,107,1007);
-insert into CargaAcademica values(10007,2018150480059,108,1007);
-insert into CargaAcademica values(10008,2018150480060,109,1008);
-insert into CargaAcademica values(10009,2018150480061,110,1009);
-insert into CargaAcademica values(10010,2018150480195,111,2001);
-insert into CargaAcademica values(10011,2018150480034,112,2002);
-insert into CargaAcademica values(10012,2018150480572,113,2003);
-insert into CargaAcademica values(10013,2018150480246,114,2004);
-insert into CargaAcademica values(10014,2018150480125,115,2005);
-insert into CargaAcademica values(10015,2018150480873,116,2006);
-insert into CargaAcademica values(10016,2018150480164,117,2007);
-insert into CargaAcademica values(10017,2018150480073,118,2008);
-insert into CargaAcademica values(10018,2018150480724,119,2009);
-insert into CargaAcademica values(10019,2018150480936,120,3001);
-insert into CargaAcademica values(10020,2018150480900,121,3002);
-insert into CargaAcademica values(10021,2018150480915,122,3003);
-insert into CargaAcademica values(10022,2018150480945,123,3004);
-insert into CargaAcademica values(10023,2018150480975,124,3005);
-insert into CargaAcademica values(10024,2018150480969,125,3006);
-insert into CargaAcademica values(10025,2018150480947,126,3007);
-insert into CargaAcademica values(10026,2018150480930,127,3008);
-insert into CargaAcademica values(10027,2018150480974,128,3009);
-insert into CargaAcademica values(10028,2018150480985,129,3010);
-insert into CargaAcademica values(10029,2018150480988,130,3011);
 ################################################
